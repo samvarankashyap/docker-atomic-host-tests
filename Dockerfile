@@ -8,7 +8,7 @@ RUN dnf install -y python-devel
 RUN dnf install -y libffi-devel
 RUN dnf install -y redhat-rpm-config
 RUN dnf install -y openssl-devel
-RUN pip install ansible==2.2.1
+RUN pip install ansible==2.2.0
 RUN git clone -b openshift_ansible_testing https://github.com/samvarankashyap/atomic-host-tests
 WORKDIR "/atomic-host-tests"
 RUN echo "$PWD"
